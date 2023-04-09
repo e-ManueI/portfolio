@@ -342,7 +342,7 @@ body.dark-mode .skills .progress-bar {
 
 .switch-mode:hover {
   transform: scale(1.2);
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
   background: rgba(101, 101, 104, 0.699);
 }
 
