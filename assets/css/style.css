@@ -568,9 +568,12 @@ section {
   padding-top: 13px;
   height: 360px;
   width: 380px;
-
 }
 
+.about .content img:hover {
+  filter: grayscale(20%);
+  transition: all ease-out 0.3s;
+}
 
 .about .content ul {
   list-style: none;
