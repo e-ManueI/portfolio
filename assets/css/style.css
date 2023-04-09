@@ -37,7 +37,7 @@ h6 {
 
 body.dark-mode {
   font-family: "Open Sans", sans-serif;
-  background-color: black;
+  background-color: rgb(230, 187, 187);
   color: #737679;
  
 }
@@ -71,8 +71,8 @@ body.dark-mode .nav-menu a,
 }
 
 body.dark-mode .switch-mode {
-  background: transparent;
-  border: dashed 1px wheat;
+  background: grey;
+  border: solid 1px grey ;
 }
 
 body.dark-mode .section-title h2 {
@@ -80,7 +80,7 @@ body.dark-mode .section-title h2 {
 }
 
 body.dark-mode #hero:before {
-  background: black;
+  background: rgb(21, 21, 21);
 }
 
 body.dark-mode #hero h1 {
@@ -284,7 +284,7 @@ body.dark-mode .skills .progress-bar {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  position: fixed;
+  position: absolute;
   right: 10px;
   top: 10px;
   z-index: 9998;
@@ -323,13 +323,14 @@ body.dark-mode .skills .progress-bar {
 .switch-mode {
   position: fixed;
   z-index: 9997;
-  padding-top: 1px;
+  padding: 10px;
   background: rgba(187, 187, 196, 0.699);
   border-radius: 50%;
-  margin-left: 25px;
-  width: 30px;
-  height: 30px;
+  margin-right: 25px;
+  width: 50px;
+  height: 48px;
   margin-top: 15px;
+  right: 0;
 
 }
 
@@ -339,6 +340,22 @@ body.dark-mode .skills .progress-bar {
   
 }
 
+.switch-mode:hover {
+  transform: scale(1.2);
+  transition: all ease-in-out 0.5s;
+  background: rgba(101, 101, 104, 0.699);
+}
+
+@media (max-width: 992px) {
+  .switch-mode {
+    left: 0;
+    position: absolute;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -367,12 +384,35 @@ body.dark-mode .skills .progress-bar {
 
 
 #hero .hero-img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: inline;
   filter: grayscale(100%);
+  transition: all ease-in-out 0.5s;
 }
+
+#hero .hero-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.5);
+  /* added scale for a zoom effect */
+}
+
+@media (max-width: 992px) {
+  #hero .hero-img {
+    width: 70px;
+    height: 70px;
+    margin-right: -20px;
+  }
+
+  #hero .hero-img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    /* added scale for a zoom effect */
+  }
+}
+
+
 
 #hero h1 {
   margin: 0;
@@ -390,7 +430,7 @@ body.dark-mode .skills .progress-bar {
 
 #hero p {
   color: #45505b;
-  margin: 15px 0 0 0;
+  margin: auto;
   font-size: 26px;
   font-family: "Lucida Console",Monospace ;
 }
@@ -409,9 +449,16 @@ body.dark-mode .skills .progress-bar {
 }
 
 #hero .social-links {
-  margin-top: 30px;
+  margin-top: 50px;
+  text-align: center;
+  margin-left: 150px;
 }
 
+@media (max-width: 992px) {
+  #hero .social-links {
+    display: none;
+  }
+}
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
