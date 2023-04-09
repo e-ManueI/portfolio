@@ -37,8 +37,8 @@ h6 {
 
 body.dark-mode {
   font-family: "Open Sans", sans-serif;
-  background-color: rgb(230, 187, 187);
-  color: #737679;
+  background-color: rgb(21, 21, 21);
+  color: #d4d4d4;
  
 }
 
@@ -88,7 +88,7 @@ body.dark-mode #hero h1 {
 }
 
 body.dark-mode #hero p {
-  color: #737679;
+  color: #d4d4d4;
 }
 
 body.dark-mode #hero .social-links a:hover {
@@ -98,10 +98,12 @@ body.dark-mode #hero .social-links a:hover {
 .bi-moon-stars-fill.dark-mode {
   color: white;
 }
-
+body.dark-mode #footer {
+  color: #d4d4d4;
+}
 body.dark-mode #footer .social-links a {
   background: transparent;
-  color: rgba(255, 255, 255, 0.288);
+  color: #d4d4d4;
 }
 
 body.dark-mode #footer .social-links a:hover {
@@ -110,9 +112,18 @@ body.dark-mode #footer .social-links a:hover {
 }
 
 body.dark-mode .skills .progress-bar {
-  background-color: #9f9aa8b7;
-} 
+  background-color: #2f3192;
+}
+body.dark-mode .about .content p {
+  color: #d4d4d4;
+}
+body.dark-mode .skills .progress .skill {
+  color: #d4d4d4;
+}
 
+body.dark-mode .skills-tools .icon-box h4 a {
+  color: #d4d4d4;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -552,10 +563,11 @@ section {
 .about .section-title {
   padding-bottom: 0;
 }
-.about .content h3 {
-  font-weight: 300;
+.about .content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  color: #323335;
+  color: #404a53b4;
   margin-bottom: 15px;
 }
 
@@ -771,7 +783,7 @@ section {
   text-align: center;
   padding: 15px 20px 75px 20px;
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-radius: 16px;
   transition: all ease-in-out 0.3s;
   background: transparent;
@@ -818,6 +830,7 @@ section {
 .skills-tools .icon-box h4 a {
   color: #45505b;
   transition: ease-in-out 0.3s;
+  margin-top: 15px;
 }
 
 .skills-tools .icon-box p {
@@ -828,7 +841,7 @@ section {
 
 .skills-tools .icon-box:hover {
   border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08); */
 }
 
 .skills-tools .iconbox-blue i {
@@ -953,14 +966,14 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: transparent;
+  background: rgb(210, 210, 210);
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: 5.6s;
-  background-color: #2c1c559a;
+  background-color: #4920b19a;
 }
 
 
